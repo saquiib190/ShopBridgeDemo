@@ -1,0 +1,49 @@
+﻿@model ShopBridgeInventory.Models.ProductInventory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<hr />
+<div>
+    <div class="container">
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">Product Inventory</div>
+                </div>
+                <div style="padding-top:30px" class="panel-body">
+
+                    <div class="form-group row">
+                        @Html.DisplayFor(model => model.ProductName)
+                        
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.ProductName)
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        @Html.DisplayFor(model => model.ProductDescription)
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.ProductDescription)
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        @Html.DisplayFor(model => model.ProductPrice)
+                        <div class="col-md-6">
+                            @Html.DisplayNameFor(model => model.ProductPrice)
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
