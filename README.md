@@ -8,3 +8,5 @@ Steps for accessing project
  5 - By clicking on the edit hyperlink you can edit details of inventory on the next page.
  6 - By clicking on the details hyperlink you can view details of inventory on the next page.
  7 - By clicking on the delete hyperlink you can delete details of inventory on the next page.
+
+Note - Before running the project make sure to remove two database files - ShopBidgeDemo.bacpac , ShopBridgeDB.bak
